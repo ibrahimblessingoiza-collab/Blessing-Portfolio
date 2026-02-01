@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oiza Blessing Ibrahim | Product Marketing Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #9333ea 0%, #db2777 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Device Mockup Styles */
+        .phone-frame {
+            border: 8px solid #1e293b;
+            border-radius: 2rem;
+            overflow: hidden;
+            background: white;
+            aspect-ratio: 9/19;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.4s ease;
+        }
+        
+        .phone-frame:hover {
+            transform: scale(1.02);
+        }
+
+        .phone-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 20px;
+            background: #1e293b;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 10;
+        }
+        .tablet-frame {
+            border: 12px solid #1e293b;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            background: white;
+            aspect-ratio: 4/3; /* Standard Tablet Aspect Ratio */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-[#eaeaea] text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#eaeaea]/90 backdrop-blur-md border-b border-white/20 py-4" data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="p-2 rounded-full bg-white/50 hover:bg-white transition shadow-sm group" title="Back to Home">
+                    <i data-lucide="arrow-left" class="w-5 h-5 text-slate-600 group-hover:text-purple-600"></i>
+                </a>
+                <span class="font-bold text-lg tracking-tight">Oiza <span class="text-purple-600">Blessing Ibrahim</span></span>
+            </div>
+            <div class="flex gap-4">
+                <a href="mailto:ibrahimblessingoiza@gmail.com" class="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-purple-600">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Contact
+                </a>
+                <a href="https://www.canva.com/design/DAGdbMwbY5U/7iM-T_7HrFcH4kj5vL6h3g/view?utm_content=DAGdbMwbY5U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfa24748f4d" target="_blank" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-slate-800 transition shadow-lg hover:scale-105 transform">
+                    View My CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-left order-2 md:order-1" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-xs font-bold tracking-wider uppercase mb-6">
+                    <span>Product Marketing Manager</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Hi, I'm <span class="gradient-text">Oiza</span>.<br/>
+                    I bridge the gap between Product, Marketing & Sales.
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    I help tech companies scale adoption and revenue. I combine data-driven GTM strategies with compelling storytelling to drive user acquisition, retention, and community growth.
+                </p>
+                <div class="grid grid-cols-3 gap-4 border-t border-slate-200 pt-8">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-3xl font-bold text-slate-900">566%</div>
+                        <div class="text-xs text-slate-500 uppercase font-bold mt-1">User Growth</div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-3xl font-bold text-slate-900">10k+</div>
+                        <div class="text-xs text-slate-500 uppercase font-bold mt-1">Active Users</div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <div class="text-3xl font-bold text-slate-900">3,800+</div>
+                        <div class="text-xs text-slate-500 uppercase font-bold mt-1">Campaign Signups</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center md:justify-end" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-500">
+                    <img src="https://i.postimg.cc/2y0b3Hcf/4ae05d1d_b0a1_43ff_89ce_555cbbb788c9_(1).jpg" alt="Oiza Blessing Ibrahim" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="py-12 px-6 bg-white border-y border-slate-200" data-aos="fade-up" data-aos-duration="800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
+            <p class="text-lg text-slate-600 leading-relaxed font-medium">
+                "Hi, I'm Oiza! Beyond the metrics and strategy, I love shopping online and surfing the internet. I guess that's what makes me cool—I get to observe user experience gaps as a consumer first, and now I'm on a career path to fix them. Product Marketing is the perfect blend of my skills and interests, and I hope I can help you grow with my A-game."
+            </p>
+        </div>
+    </section>
+
+    <!-- The Corperland Case Study -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10 flex items-end justify-between" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm font-bold text-purple-600 uppercase tracking-widest mb-2">Featured Work</h2>
+                    <h3 class="text-3xl font-bold text-slate-900">The Corperland.ng Growth Engine</h3>
+                    <a href="https://www.corperland.ng" target="_blank" class="text-sm text-blue-600 hover:underline mt-1 inline-flex items-center gap-1">Visit Website <i data-lucide="external-link" class="w-3 h-3"></i></a>
+                </div>
+                <div class="hidden md:block">
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-sm font-bold text-slate-600">May 2025 - Present</span>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Left: The Narrative -->
+                <div class="space-y-8">
+                    <div class="glass-card p-8 rounded-2xl" data-aos="fade-right">
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i data-lucide="target" class="text-red-500"></i> The Challenge
+                        </h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Corperland needed to move from an early-stage product to a mass-adoption platform for Nigerian youth. The goal was to fix the "trust gap" in commerce, solve fragmented user needs, and build a sustainable community from scratch.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl border-l-4 border-l-purple-600" data-aos="fade-right" data-aos-delay="200">
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i data-lucide="zap" class="text-purple-600"></i> The GTM Strategy
+                        </h4>
+                        <ul class="space-y-4 text-slate-600 text-sm">
+                            <li class="flex gap-3">
+                                <span class="bg-purple-100 text-purple-700 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">1</span>
+                                <span><strong>Product Launch (Job Board):</strong> Conducted market research to identify user needs, leading to the launch of a Job Board that connects graduates to opportunities and opened collaboration channels with businesses hiring entry-level staff.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="bg-purple-100 text-purple-700 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">2</span>
+                                <span><strong>Content & Community:</strong> Revamped the social media content strategy and led a team of community managers to boost engagement, turning passive followers into active users.</span>
+                            </li>
+                             <li class="flex gap-3">
+                                <span class="bg-purple-100 text-purple-700 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">3</span>
+                                <span><strong>Marketplace GTM:</strong> Led the ideation and Go-to-Market strategy for the Corperland Marketplace, solving the market need for trusted commerce in bits.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="bg-purple-100 text-purple-700 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">4</span>
+                                <span><strong>Multi-Channel Orchestration:</strong> Executed a synchronized strategy across Email Marketing, Influencer collaborations, and Webinars.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: The Metrics -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-500">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
+                        <h4 class="text-lg font-medium text-slate-300 mb-6">Key Results</h4>
+                        
+                        <div class="space-y-8">
+                            <div data-aos="zoom-in" data-aos-delay="300">
+                                <div class="flex items-end gap-2 mb-1">
+                                    <span class="text-5xl font-bold">566%</span>
+                                    <span class="text-green-400 mb-2"><i data-lucide="trending-up" class="w-6 h-6"></i></span>
+                                </div>
+                                <p class="text-slate-400 text-sm">User Base Growth (1.5k &to; 10k+) in 6 Months</p>
+                            </div>
+                            
+                            <div class="w-full bg-slate-800 h-px"></div>
+
+                            <div data-aos="zoom-in" data-aos-delay="400">
+                                <div class="flex items-end gap-2 mb-1">
+                                    <span class="text-4xl font-bold">3,800+</span>
+                                </div>
+                                <p class="text-slate-400 text-sm">App Signups from a Single Campaign</p>
+                            </div>
+
+                            <div class="w-full bg-slate-800 h-px"></div>
+
+                            <div data-aos="zoom-in" data-aos-delay="500">
+                                <div class="flex items-end gap-2 mb-1">
+                                    <span class="text-4xl font-bold">34.3%</span>
+                                </div>
+                                <p class="text-slate-400 text-sm">MAU/DAU Ratio (High Retention)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Portfolio (Marketing in Action) -->
+    <section class="py-16 px-6 bg-slate-100">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2" data-aos="fade-up">Marketing in Action</h3>
+            <p class="text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">A glimpse into my creative strategy and execution.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Phone 1: Influencer Collab -->
+                <a href="https://www.instagram.com/reel/DOJPHENjLAj/?igsh=Y3pobnBvYXh2cHc1" target="_blank" class="flex flex-col items-center group cursor-pointer transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="phone-frame w-full max-w-[280px] relative">
+                        <div class="phone-notch"></div>
+                        <img src="https://i.postimg.cc/WpmQg8rX/Whats_App_Image_2026_01_27_at_12_00_53_PM_(2).jpg" alt="Influencer Collaboration" class="w-full h-full object-cover transition duration-300 group-hover:brightness-90">
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="bg-white/90 p-4 rounded-full shadow-lg">
+                                <i data-lucide="play" class="w-8 h-8 text-purple-600 fill-current ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 font-bold text-purple-600 group-hover:text-purple-700 flex items-center gap-1">Influencer Collabs <i data-lucide="external-link" class="w-3 h-3"></i></p>
+                    <p class="text-xs text-slate-500">Boosting Reach & Trust</p>
+                </a>
+                
+                <!-- Phone 2: Content Marketing -->
+                <a href="https://www.instagram.com/reel/DT-JJstDaLJ/?igsh=MnM0OGhscW94MjQ5" target="_blank" class="flex flex-col items-center group cursor-pointer transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="phone-frame w-full max-w-[280px] relative">
+                        <div class="phone-notch"></div>
+                        <img src="https://i.postimg.cc/15kCdNp5/Whats-App-Image-2026-01-27-at-6-32-15-PM.jpg" alt="Content Marketing" class="w-full h-full object-cover transition duration-300 group-hover:brightness-90">
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="bg-white/90 p-4 rounded-full shadow-lg">
+                                <i data-lucide="play" class="w-8 h-8 text-blue-600 fill-current ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 font-bold text-blue-600 group-hover:text-blue-700 flex items-center gap-1">Content Marketing <i data-lucide="external-link" class="w-3 h-3"></i></p>
+                    <p class="text-xs text-slate-500">Viral Videos & Engagement</p>
+                </a>
+
+                <!-- Phone 3: Email Marketing (Static) -->
+                <div class="flex flex-col items-center group transition-transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="600">
+                    <div class="phone-frame w-full max-w-[280px]">
+                        <div class="phone-notch"></div>
+                        <img src="https://i.postimg.cc/7P1p097Q/Whats_App_Image_2026_01_27_at_12_00_53_PM.jpg" alt="Email Marketing" class="w-full h-full object-cover">
+                    </div>
+                    <p class="mt-4 font-bold text-pink-600">Email Marketing</p>
+                    <p class="text-xs text-slate-500">Nurture Sequences & Retention</p>
+                </div>
+            </div>
+
+            <!-- Tablet -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="tablet-frame w-full max-w-3xl border-[16px]">
+                    <img src="https://i.postimg.cc/7hG3wmgG/need.png" alt="Marketing Analytics" class="w-full h-full object-cover">
+                </div>
+                <p class="mt-4 font-bold text-slate-900 text-lg">Marketing Analytics</p>
+                <p class="text-sm text-slate-500">Tracking marketing results through pixel setups</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Portfolio Button Section -->
+    <section class="py-10 px-6" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto text-center">
+            <a href="https://www.canva.com/design/DAG-8_-wtaU/BBhBZi3pzFG7rWyn2_fXLQ/view?utm_content=DAG-8_-wtaU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb4e84fd099" target="_blank" class="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-bold text-xl hover:shadow-2xl hover:scale-110 transition-all duration-300">
+                <i data-lucide="palette" class="w-6 h-6"></i>
+                View Creative Portfolio
+            </a>
+            <p class="text-slate-500 text-sm mt-3">Click to see my design, video, and creative work in detail.</p>
+        </div>
+    </section>
+
+    <!-- Skills & Stack -->
+    <section class="py-16 px-6 bg-white/50" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">My PMM Toolkit</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Go-to-Market Strategy</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Product Positioning</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Market Research</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Project Management</span>
+                         <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Customer Journey Mapping</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Content Creation</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Influencer Marketing</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Email Marketing</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">Copywriting</span>
+                         <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:border-purple-300 transition cursor-default">UI/UX Strategy</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Tech Stack</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Category: Growth & Ads -->
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Growth & Ads</p>
+                            <div class="grid grid-cols-4 sm:grid-cols-5 gap-4">
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="facebook" class="w-6 h-6 text-blue-600"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Meta Ads</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="w-6 h-6" alt="Google">
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Google Ads</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="video" class="w-6 h-6 text-black"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">TikTok Studio</span>
+                                </div>
+                                 <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="mail" class="w-6 h-6 text-yellow-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Mailchimp</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: Data & Analytics -->
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Data & Analytics</p>
+                            <div class="grid grid-cols-4 sm:grid-cols-5 gap-4">
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="bar-chart-2" class="w-6 h-6 text-orange-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Google Analytics</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="database" class="w-6 h-6 text-blue-600"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">SQL</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="pie-chart" class="w-6 h-6 text-yellow-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Power BI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: Creative & AI -->
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Creative & AI</p>
+                            <div class="grid grid-cols-4 sm:grid-cols-5 gap-4">
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" class="w-6 h-6" alt="Canva">
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Canva</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-6 h-6" alt="Figma">
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Figma</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="film" class="w-6 h-6 text-black"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">CapCut</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="bot" class="w-6 h-6 text-green-600"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">AI Tools</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: Productivity & Workflow -->
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Productivity</p>
+                            <div class="grid grid-cols-4 sm:grid-cols-5 gap-4">
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="layout-grid" class="w-6 h-6 text-blue-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Google Workspace</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="check-square" class="w-6 h-6 text-black"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Notion</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="trello" class="w-6 h-6 text-blue-400"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Trello</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="list" class="w-6 h-6 text-pink-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Asana</span>
+                                </div>
+                                <div class="tech-item flex flex-col items-center gap-2 p-3 bg-white rounded-xl shadow-sm hover:scale-105 transition">
+                                    <i data-lucide="slack" class="w-6 h-6 text-purple-500"></i>
+                                    <span class="text-[10px] font-bold text-slate-500 text-center">Slack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Experience -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-2xl font-bold text-slate-900 mb-10 text-center" data-aos="fade-up">Other Growth Wins & Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Card 1: Premium One Rydz -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-purple-300 transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-sm font-bold text-purple-600 uppercase tracking-wide">Social Media & Ads Strategist</div>
+                        <div class="text-xs text-slate-500 font-bold bg-purple-50 px-2 py-1 rounded">Premium One Rydz</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Scaling Social Presence</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        I joined Premium One Rydz to overhaul their social acquisition channels. In just 3 months, I grew our Instagram community by 300% and optimized our Meta Ad creatives to achieve a 4.1% CTR, driving down costs while boosting engagement by 70%.
+                    </p>
+                </div>
+
+                <!-- Card 2: Tech-Savvy Teacher -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-purple-300 transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-sm font-bold text-blue-600 uppercase tracking-wide">Social Media Marketer</div>
+                        <div class="text-xs text-slate-500 font-bold bg-blue-50 px-2 py-1 rounded">Tech-Savvy Teacher Intl.</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Authentic Community Building</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        My focus here was trust and conversion. By owning the brand voice and focusing on authentic storytelling, I drove a massive 1215% increase in organic engagement. This trust translated directly to sales, with a 100% conversion rate on our key lead generation campaign.
+                    </p>
+                </div>
+
+                <!-- Card 3: Menus.ng -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-purple-300 transition group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-between items-start mb-4">
+                         <div class="text-sm font-bold text-pink-600 uppercase tracking-wide">Data & UX Specialist</div>
+                         <div class="text-xs text-slate-500 font-bold bg-pink-50 px-2 py-1 rounded">Menus.ng</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Viral Content & Product Optimization</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        I wore two hats: content and product. I launched our TikTok channel with a viral video hitting 30k views, growing the account to 400 followers in 10 days. simultaneously, I used data insights to streamline internal workflows, improving overall product performance by 25%.
+                    </p>
+                </div>
+
+                <!-- Card 4: Close-By (UX Project) -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-purple-300 transition group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-sm font-bold text-orange-600 uppercase tracking-wide">Product Marketing Lead</div>
+                        <div class="text-xs text-slate-500 font-bold bg-orange-50 px-2 py-1 rounded">Close-By Project</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">User-Centric Design</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        For the Close-By tourism app, I led the product marketing and research phase. I conducted deep user research with Nigerian travelers to uncover pain points, then translated those insights into Figma wireframes that improved our user navigation flow by 20% for the MVP launch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Certifications Section -->
+    <section class="py-16 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-2xl font-bold text-slate-900 mb-10 text-center" data-aos="fade-up">Certifications & Continuous Learning</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cert 1 -->
+                <div class="glass-card p-2 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://i.postimg.cc/hj9YX5sM/CERTIFICATE-LANDING-PAGE-PE448ZA3A4R4.jpg" alt="Certification 1" class="w-full h-auto rounded-lg shadow-sm hover:scale-105 transition duration-500">
+                </div>
+                <!-- Cert 2 -->
+                <div class="glass-card p-2 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://i.postimg.cc/C5SQks6w/Ibrahim_Blessing.jpg" alt="Certification 2" class="w-full h-auto rounded-lg shadow-sm hover:scale-105 transition duration-500">
+                </div>
+                <!-- Cert 3 -->
+                <div class="glass-card p-2 rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://i.postimg.cc/MTyLnF5Q/1718276397435.jpg" alt="Certification 3" class="w-full h-auto rounded-lg shadow-sm hover:scale-105 transition duration-500">
+                </div>
+                 <!-- Cert 4 -->
+                 <div class="glass-card p-2 rounded-xl" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://i.postimg.cc/TwrsK40m/1714599651838.jpg" alt="Certification 4" class="w-full h-auto rounded-lg shadow-sm hover:scale-105 transition duration-500">
+                </div>
+                 <!-- Cert 5 -->
+                 <div class="glass-card p-2 rounded-xl" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://i.postimg.cc/25xv3dv5/Screenshot_2026_02_01_154841.png" alt="Certification 5" class="w-full h-auto rounded-lg shadow-sm hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Contact / Footer -->
+    <footer class="py-12 bg-white border-t border-slate-200 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">Ready to scale your product?</h2>
+        <div class="flex justify-center gap-4">
+            <!-- UPDATED HIRE ME LINK -->
+            <a href="mailto:ibrahimblessingoiza@gmail.com" class="px-8 py-3 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition">
+                Hire Me
+            </a>
+            <a href="https://www.canva.com/design/DAG-8_-wtaU/BBhBZi3pzFG7rWyn2_fXLQ/view?utm_content=DAG-8_-wtaU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb4e84fd099" target="_blank" class="px-8 py-3 bg-slate-100 text-slate-900 rounded-full font-bold hover:bg-slate-200 transition inline-flex items-center gap-2">
+                View Creative Portfolio <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+        </div>
+        <div class="mt-12 text-slate-400 text-sm">
+            &copy; 2026 Oiza Blessing Ibrahim. Product Marketing Manager.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        AOS.init({
+            once: true, // Animation happens only once - while scrolling down
+            offset: 100, // Offset (in px) from the original trigger point
+        });
+    </script>
+</body>
+</html>
